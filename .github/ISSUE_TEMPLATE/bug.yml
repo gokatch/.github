@@ -1,5 +1,5 @@
 name: Bug
-description: For reporting a bug or issue
+description: For reporting a bug or an issue.
 title: "[Bug]: "
 labels: ["bug"]
 body:
