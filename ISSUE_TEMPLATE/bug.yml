@@ -1,0 +1,57 @@
+name: Bug
+description: For reporting a bug or an issue.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a general summary of the issue.
+      placeholder: ex. When I tried syncing my contacts nothing happened.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Explain what should have happened.
+      placeholder: ex. When I press the sync button I expect new contacts to be shown.
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behavior
+      description: Explain what happens instead of the expected behavior.
+      placeholder: ex. No contacts were synced..
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a link to a live example, or an unambiguous set of steps to reproduce this bug. Include code to reproduce, if relevant.
+      placeholder: |
+               1.
+               2.
+               3.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: What environment did this bug happen on?
+      multiple: true
+      options:
+        - Development
+        - Staging
+        - Production
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: What platform did this bug happen on?
+      multiple: true
+      options:
+        - iOS
+        - Android
+  - type: textarea
+    id: solution
+    attributes:
+      label: Possible Solution
+      description: Not obligatory, but suggest a fix/reason for the bug.
+      placeholder: ex. problem could be in the ContactsSyncer.swift file.
